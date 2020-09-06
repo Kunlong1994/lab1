@@ -30,12 +30,10 @@ Deliverables are due next Tuesday. Post a link to the wiki page on your main cla
 ## Part B. Manually Blink a LED
 
 **a. What color stripes are on a 220 Ohm resistor?**
-
-
-
+red red brown gold
  
 **b. What do you have to do to light your LED?**
-
+first install the driver, or try to fing the COM port in device manager
 ## Part C. Blink a LED using Arduino
 
 
@@ -44,34 +42,33 @@ Deliverables are due next Tuesday. Post a link to the wiki page on your main cla
 
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+void setup() {
+  pinMode(10, OUTPUT); \\Change the pin port number to 10
+}
 
+void loop() {
+  digitalWrite(10, HIGH);   
+  delay(1000);                      
+  digitalWrite(10, LOW);   
+  delay(1000);       
 **b. What line(s) of code do you need to change to change the rate of blinking?**
-
+change delay(1000) to delay(2000)
 **c. What circuit element would you want to add to protect the board and external LED?**
-
-
-
+the resistor, to reduce the voltage to 2 volts.
 **d.  At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking?**
-
-
+50, current is still flowing and when change delay to 500, it starts to blink again
 
 **e. Save your new blink code to your lab 1 repository, with a link on the Lab report wiki page.**
 
 ### 2. Blink your LED
 
 
-
 **Make a video of your LED blinking, and add it to your lab submission.**
 
 ## Part D. Manually fade a LED
-
-
-
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
 ## Part E. Fade a LED using Arduino
-
-
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
 
