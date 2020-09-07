@@ -42,14 +42,15 @@ first install the driver, or try to fing the COM port in device manager
 
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+int led = 10
 void setup() {
-  pinMode(10, OUTPUT); \\Change the pin port number to 10
+  pinMode(led, OUTPUT); \\Change the pin port number to 10
 }
 
 void loop() {
-  digitalWrite(10, HIGH);   
+  digitalWrite(led, HIGH);   
   delay(1000);                      
-  digitalWrite(10, LOW);   
+  digitalWrite(led, LOW);   
   delay(1000);       
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 change delay(1000) to delay(2000)
@@ -67,13 +68,14 @@ the resistor, to reduce the voltage to 2 volts.
 
 ## Part D. Manually fade a LED
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
-
+No, potrntiometer provides different resistance, when the resistance is too high, there is not enough current for led
 ## Part E. Fade a LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
-
+use int to input brightness and fade amount, use analogWrite() to set the brightness
 **b. What is analogWrite()? How is that different than digitalWrite()?**
-
+ analogWrite() sets the value of a PWM output pin on a scale of 0 - 255.
+ digital sets the value only to HIGH and LOW
 
 
 ## Part F. FRANKENLIGHT!!!
