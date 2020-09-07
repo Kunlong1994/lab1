@@ -33,7 +33,7 @@ Deliverables are due next Tuesday. Post a link to the wiki page on your main cla
 red red brown gold
  
 **b. What do you have to do to light your LED?**
-first install the driver, or try to fing the COM port in device manager
+push the button. or you can try first install the driver, or try to find the COM port in device manager
 ## Part C. Blink a LED using Arduino
 
 
@@ -56,7 +56,7 @@ change delay(1000) to delay(2000)
 **c. What circuit element would you want to add to protect the board and external LED?**
 the resistor, to reduce the voltage to 2 volts.
 **d.  At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking?**
-50, current is still flowing and when change delay to 500, it starts to blink again
+about 10 to 20ms, current is still flowing and when change delay to 500, it starts to blink again
 
 **e. Save your new blink code to your lab 1 repository, with a link on the Lab report wiki page.**
 
